@@ -1,0 +1,169 @@
+* { 
+    font-family: 'Poppins', sans-serif;;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+}
+
+
+.header__nav { 
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__list { 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav__list--items { 
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: blue;
+    font-weight: 500;
+}
+
+.nav__list--items a { 
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.5s;
+    transition-property: background-color;
+    display:block;
+
+}
+
+
+.nav__list--items a:hover { 
+    background-color: white;
+}
+
+.header__info { 
+    padding: 0;
+    margin: auto;
+}
+
+
+.topbooks { 
+    list-style: none;
+    display: block;
+}
+
+.topbooks__items { 
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.topbooks__link { 
+    transition: 0.5s;
+    transition-property: background-color;
+    text-decoration: none;
+    letter-spacing: 0.1px;
+}
+
+.topbooks__link:hover { 
+    background-color:gray;
+}
+ 
+.title { 
+    color: blue;
+    padding: 0;
+    margin: auto;
+    text-align: center;
+    text-shadow: none;
+}
+
+.description { 
+    text-align: center;
+}
+
+.footer__info {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.footer__nav { 
+    list-style: none;
+}
+
+.top__author {
+    display: flex;
+    flex-direction: column;
+}
+
+.top__author--section { 
+    display: flex;
+    justify-content: flex-end;
+}
+.footer__nav--social { 
+    list-style: none;
+    display: flex;
+}
+
+.social__icons {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    align-items: center;
+    padding: 1rem;
+    transition: 0.5s;
+    transition-property: background-color;
+}
+
+.social__icons:hover { 
+    background-color: white;
+}
+
+.footer__heading { 
+    text-transform:capitalize;
+    color: blue;
+}
+
+.top__author--img {
+    max-width: 100%;
+}
+
+#topbooks__img { 
+    display: inline-block;
+    height: 500px;
+    width: 400px;
+
+}
+
+.photo__links {
+    transition: transform ease-in-out;
+    transition-property:transform;
+}
+
+.photo__links:hover {
+    transform: scale(1.15);
+}
+
+.book__summary { 
+    display: flex;
+    flex-direction: column;
+}
+
+/* responsive designs using media queries */
+
+@media (max-width:600px) {
+    .title {
+        color: red;
+    }
+
+    .topbooks {
+        display: block;
+    }
+}
+
